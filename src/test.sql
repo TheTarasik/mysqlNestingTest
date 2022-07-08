@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Час створення: Лип 08 2022 р., 18:45
+-- Час створення: Лип 08 2022 р., 18:58
 -- Версія сервера: 10.3.13-MariaDB
 -- Версія PHP: 7.0.32
 
@@ -104,7 +104,7 @@ ALTER TABLE `users_data`
 -- Обмеження зовнішнього ключа таблиці `users_data`
 --
 ALTER TABLE `users_data`
-  ADD CONSTRAINT `users_data_ibfk_1` FOREIGN KEY (`id_user`) REFERENCES `soundify`.`users` (`id_user`);
+  ADD CONSTRAINT `users_data_ibfk_1` FOREIGN KEY (`id_user`) REFERENCES `users` (`id_user`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
